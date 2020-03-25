@@ -9,27 +9,181 @@
 <head>
     <title>Google</title>
     <style>
-        .top-left.header
-        {
-            font-size: 16;
+        .main {
+            margin: 0px auto;
         }
-        .top-left.header
-        {
-            align-self: center;
+
+        .left-heading {
+            display: inline-block;
+            position: absolute;
+            padding-left: 30;
+            color: #000;
+            opacity: 0.75;
+            z-index: 999;
+        }
+
+
+        .right-heading {
+            display: flex;
+            padding-left: 30;
+            padding-right: 30;
+            position: relative;
+            text-align: right;
+            align-items: center;
+            justify-content: flex-end;
+            color: #000;
+            opacity: 0.75;
+        }
+
+        .sub-left-heading {
+            padding-left: 15px;
+        }
+
+        .sub-right-heading {
+            padding-right: 15px;
+        }
+
+        .footer-main {
+            display: block;
+            bottom: 0;
+            height: 35px;
+            position: fixed;
+            width: 100%;
+            background: #f2f2f2;
+            line-height: 40px;
+            min-width: 980px;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        .footer-sub-left {
+            display: inline-block;
+            padding-left: 30px;
+        }
+
+        .footer-sub-right {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        .left-footer {
+            float: left;
+            color: #000;
+            opacity: 0.75;
+            line-height: 40px;
+        }
+
+        .right-footer {
+            float: right;
+            margin-right: 30px;
+            color: #000;
+            opacity: 0.75;
+            line-height: 40px;
+        }
+
+
+
+
+        .logo {
+            display: flex;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .form-style {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        #input-text {
+            position: relative;
+            top: -90px;
+        }
+
+        #button-main {
+            position: relative;
+            top: -70px;
+        }
+
+        #footer-style {
+            font-size: 14px;
         }
     </style>
 </head>
 
-<body>
-    <div id="top-left-header">
-        <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" About>
+<body class="main">
 
-    </div>
+    <header class="top-space" style="padding-top: 16px">
+        <div class="left-heading">
+            <div class="headings">
+                <a class="sub-left-heading" href="https://about.google/">About</a>
+                <a class="sub-left-heading"
+                    href="https://store.google.com/us/?hl=en-US&&43700028976493334&gclid=EAIaIQobChMIpZPI25626AIVLf_jBx24VA1PEAAYASAAEgJjbvD_BwE&gclsrc=aw.ds">Store</a>
+            </div>
+        </div>
+        <div class="right-heading">
+            <div class="headings">
+                <a class="sub-right-heading" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+                <a class="sub-right-heading" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+            </div>
+        </div>
+    </header>
 
-    <div id="logo">
+    <div class="logo">
         <img id="logoPic" alt="Google Logo"
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
+
+    <form class="form-style">
+        <div id="input-text">
+            <input type="text" size="50" placeholder="Search...">
+        </div>
+    </form>
+    <form class="form-style">
+        <div id="button-main">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </form>
+    <div class="form-style">
+        <div id="button-main">
+            <p style="font-size: 14px; color: blue;">Git source code available <a style="color:red; font-size: 14px;"
+                    href="https://github.com/longview747/google-homepage">here!</a></p>
+        </div>
+        </ive>
+
+        <footer class="footer-main">
+            <div class="left-footer">
+                <a class="footer-sub-left" id="footer-style"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwji49_qibboAhUDTKwKHQD5AjQQkdQCCBY&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
+                <a class="footer-sub-left" id="footer-style"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwji49_qibboAhUDTKwKHQD5AjQQktQCCBc&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+                <a class="footer-sub-left" id="footer-style" href="https://google.com/search/howsearchworks/?fg=1">How
+                    Search Works</a>
+            </div>
+            <div class="right-footer">
+                <a class="footer-sub-right" id="footer-style"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwji49_qibboAhUDTKwKHQD5AjQQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a>
+                <a class="footer-sub-right" id="footer-style"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwji49_qibboAhUDTKwKHQD5AjQQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a>
+                <a class="footer-sub-right" id="footer-style"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwji49_qibboAhUDTKwKHQD5AjQQzq0CCBQ&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+            </div>
+        </footer>
+
 
 
 </body>
